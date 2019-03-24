@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+button {
+  background-color: white;
+  outline: none;
+  border: 1px solid;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.border_radius {
+  border-radius: 3px; }
+
+.done {
+  transition: 0.5s; }
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 320px) {
+    #root {
+      height: unset;
+      margin: 10px 0; } }
+  #root .wrap_All {
+    margin: 0 10px; }
+    #root .wrap_All .wrap_header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; }
+      #root .wrap_All .wrap_header h1 {
+        font-size: 40px; }
+        @media only screen and (max-width: 380px) {
+          #root .wrap_All .wrap_header h1 {
+            font-size: 35px; } }
+      #root .wrap_All .wrap_header .wrap_header_span {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; }
+        #root .wrap_All .wrap_header .wrap_header_span .header_span {
+          font-weight: 800; }
+    #root .wrap_All .wrap_search {
+      display: flex;
+      margin-bottom: 10px;
+      font-size: 20px; }
+      @media only screen and (max-width: 487px) {
+        #root .wrap_All .wrap_search {
+          flex-direction: column; } }
+      #root .wrap_All .wrap_search .search {
+        font-size: inherit;
+        padding: 10px;
+        border: 1px solid;
+        margin-right: 10px; }
+        @media only screen and (max-width: 487px) {
+          #root .wrap_All .wrap_search .search {
+            margin-right: 0; } }
+      #root .wrap_All .wrap_search .wrap_butt_search {
+        display: flex; }
+        #root .wrap_All .wrap_search .wrap_butt_search .butt_search {
+          font-size: inherit;
+          padding: 10px; }
+          @media only screen and (max-width: 487px) {
+            #root .wrap_All .wrap_search .wrap_butt_search .butt_search {
+              flex-grow: 1; } }
+        #root .wrap_All .wrap_search .wrap_butt_search .active_butt {
+          background-color: blue;
+          color: white;
+          border: 1px solid blue;
+          transition: 0.2s; }
+          #root .wrap_All .wrap_search .wrap_butt_search .active_butt:hover {
+            background-color: #0000c5; }
+        #root .wrap_All .wrap_search .wrap_butt_search .butt_search:nth-child(1) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
+        #root .wrap_All .wrap_search .wrap_butt_search .butt_search:nth-child(2) {
+          border-right: none;
+          border-left: none;
+          border-radius: 0; }
+        #root .wrap_All .wrap_search .wrap_butt_search .butt_search:nth-child(3) {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0; }
+    #root .wrap_All .li_todo {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border: 1px solid;
+      border-top: none; }
+      #root .wrap_All .li_todo .span_todo_item {
+        font-size: 25px;
+        font-weight: 700;
+        position: relative;
+        cursor: pointer; }
+        #root .wrap_All .li_todo .span_todo_item:before {
+          content: '';
+          width: 0;
+          height: 2px;
+          opacity: 0;
+          background-color: #f4150f;
+          position: absolute;
+          top: 50%;
+          left: -10%;
+          transform: translate(0, -50%);
+          transition: 0.3s; }
+        #root .wrap_All .li_todo .span_todo_item.done:before {
+          content: '';
+          width: 120%;
+          opacity: 1;
+          position: absolute; }
+      #root .wrap_All .li_todo .buttLi_todo .buttTodo {
+        width: 30px;
+        height: 30px;
+        margin: 2px; }
+        #root .wrap_All .li_todo .buttLi_todo .buttTodo img {
+          width: 100%;
+          height: 100%; }
+    #root .wrap_All .li_todo:nth-child(1) {
+      border: 1px solid; }
+    #root .wrap_All .wrap_inputAdd {
+      font-size: 20px;
+      display: flex;
+      margin: 10px 0 0 0; }
+      #root .wrap_All .wrap_inputAdd .inputAdd {
+        width: 70%;
+        font-size: inherit;
+        margin-right: 10px;
+        border: 1px solid;
+        border-radius: 3px;
+        padding: 10px; }
+      #root .wrap_All .wrap_inputAdd .butt_inputAdd {
+        width: 30%;
+        font-size: inherit;
+        padding: 10px; }
+
+/*# sourceMappingURL=stule.css.map */
